@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo em {{ cidade }}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'meteo/styles.css' %}">
+</head>
+<body>
+     <h1>API de Previsão do Tempo</h1>
+    <p>Bem-vindo à documentação da nossa API de previsão do tempo. Esta API fornece informações meteorológicas para várias cidades. Abaixo estão descritos os endpoints disponíveis, os parâmetros retornados e exemplos de uso.</p>
+
+    <div class="endpoint">
+        <h2>1. Lista de Cidades</h2>
+        <p><strong>Endpoint:</strong> <code>/api/cidades</code></p>
+        <p><strong>Método:</strong> GET</p>
+        <p><strong>Descrição:</strong> Retorna a lista de todas as cidades disponíveis na API.</p>
+        <h3>Exemplo de Resposta</h3>
+        <pre>
+{
+    "cidades": [
+        "Lisboa",
+        "Porto",
+        "Madrid",
+        "Paris"
+    ]
+}
+        </pre>
+    </div>
+
+    <div class="endpoint">
+        <h2>2. Previsão Meteorológica de Hoje</h2>
+        <p><strong>Endpoint:</strong> <code>/api/previsao/hoje</code></p>
+        <p><strong>Método:</strong> GET</p>
+        <p><strong>Descrição:</strong> Retorna a previsão meteorológica para hoje para uma cidade específica.</p>
+        <p><strong>Parâmetros:</strong></p>
+        <ul class="parametros">
+            <li><code>cidade</code> (obrigatório) - Nome da cidade para a qual deseja a previsão.</li>
+        </ul>
+        <h3>Exemplo de Resposta</h3>
+        <pre>
+{
+    {
+        "owner": "IPMA",
+        "country": "PT",
+        "data": [
+        {
+            "precipitaProb": "95.0",
+            "tMin": "16.5",
+            "tMax": "21.3",
+            "predWindDir": "SW",
+            "idWeatherType": 9,
+            "classWindSpeed": 2,
+            "longitude": "-9.1286",
+            "forecastDate": "2024-06-08",
+            "classPrecInt": 2,
+            "latitude": "38.7660"
+        },
+        "globalIdLocal": 1110600,
+        "dataUpdate": "2024-06-08T13:31:02"
+    }
+}
+        </pre>
+    </div>
+
+    <div class="endpoint">
+        <h2>3. Previsão Meteorológica para os Próximos 5 Dias</h2>
+        <p><strong>Endpoint:</strong> <code>/api/previsao/5dias</code></p>
+        <p><strong>Método:</strong> GET</p>
+        <p><strong>Descrição:</strong> Retorna a previsão meteorológica para os próximos 5 dias para uma cidade específica.</p>
+        <p><strong>Parâmetros:</strong></p>
+        <ul class="parametros">
+            <li><code>cidade</code> (obrigatório) - Nome da cidade para a qual deseja a previsão.</li>
+        </ul>
+        <h3>Exemplo de Resposta</h3>
+        <pre>
+{
+
+  "owner": "IPMA",
+  "country": "PT",
+  "data": [
+    {
+      "precipitaProb": "100.0",
+      "tMin": "17.3",
+      "tMax": "21.8",
+      "predWindDir": "SW",
+      "idWeatherType": 9,
+      "classWindSpeed": 2,
+      "longitude": "-8.6535",
+      "forecastDate": "2024-06-08",
+      "classPrecInt": 2,
+      "latitude": "40.6413"
+    },
+    {
+      "precipitaProb": "16.0",
+      "tMin": "17.1",
+      "tMax": "22.0",
+      "predWindDir": "NW",
+      "idWeatherType": 3,
+      "classWindSpeed": 1,
+      "longitude": "-8.6535",
+      "forecastDate": "2024-06-09",
+      "latitude": "40.6413"
+    },
+    {
+      "precipitaProb": "41.0",
+      "tMin": "16.1",
+      "tMax": "22.6",
+      "predWindDir": "N",
+      "idWeatherType": 3,
+      "classWindSpeed": 2,
+      "longitude": "-8.6535",
+      "forecastDate": "2024-06-10",
+      "latitude": "40.6413"
+    },
+    {
+      "precipitaProb": "0.0",
+      "tMin": "15.2",
+      "tMax": "21.9",
+      "predWindDir": "N",
+      "idWeatherType": 1,
+      "classWindSpeed": 2,
+      "longitude": "-8.6535",
+      "forecastDate": "2024-06-11",
+      "latitude": "40.6413"
+    },
+    {
+      "precipitaProb": "0.0",
+      "tMin": "14.7",
+      "tMax": "21.4",
+      "predWindDir": "NW",
+      "idWeatherType": 1,
+      "classWindSpeed": 2,
+      "longitude": "-8.6535",
+      "forecastDate": "2024-06-12",
+      "latitude": "40.6413"
+    }
+  ],
+    "globalIdLocal": 1010500,
+    "dataUpdate": "2024-06-08T13:31:02"
+    }
+}
+</body>
+</html>

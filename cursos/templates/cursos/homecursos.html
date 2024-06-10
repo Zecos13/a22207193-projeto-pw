@@ -1,0 +1,22 @@
+{% extends 'cursos/layout.html' %}
+
+{% block content %}
+<div>
+    <h2>Lista de Cursos</h2>
+    <ul>
+        {% for curso in cursos %}
+        <li>
+            <h3>{{ curso.nome }}</h3>
+            <p>{{ curso.content }}</p>
+            <a href="{% url 'cursos:curso_url' curso.id %}">Ver Detalhes</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'cursos:novo_curso_url' %}">
+        <button class = "add_editbutton">
+            Adicionar Curso
+        </button>
+    </a>
+</div>
+{% endblock %}

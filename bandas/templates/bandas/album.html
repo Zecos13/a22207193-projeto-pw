@@ -1,0 +1,33 @@
+{% extends 'bandas/layout.html' %}
+
+{% block content %}
+
+
+
+<div class="album-details">
+    <h2>{{ album.title }}</h2>
+    <img src="{{ album.cover.url }}" alt="{{ album.title }} Cover">
+    <p>Data de Lançamento: {{ album.releaseDate }}</p>
+    <p>Gravadora: {{ album.label }}</p>
+
+    <div id="listaMusicas">
+    <h3>Lista de Músicas</h3>
+    <ul>
+        {% for musica in album.song_set.all %}
+            <li class = "song"><a href="{% url 'bandas:song_url' musica.id %}"> {{ musica.title }}   </a>
+
+            {% if musica.lyrics %}
+
+                <i class="fa-regular fa-comments"></i>
+            {% endif %}
+
+            </li>
+        {% endfor %}
+    </ul>
+
+    </div>
+
+    <a href="{% url 'bandas:edita_album_url' album.id %}"><button>Editar Álbum</button></a>
+    <a href="{% url 'bandas:nova_musica_url' album.id %}"><button>Adicionar Música</button></a>
+</div>
+{% endblock %}

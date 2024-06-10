@@ -1,0 +1,37 @@
+{% extends 'cursos/layout.html' %}
+
+{% block content %}
+
+<div><h2>{{ curso.nome }}</h2></div>
+
+<div class="curso-details">
+
+    <p><strong>Apresentação: </strong>{{ curso.apresentacao }}</p>
+
+    <p><strong>Objetivos: </strong>{{ curso.objetivos }}</p>
+
+    <p><strong>Competências: </strong>{{ curso.competencias }}</p>
+
+</div>
+
+<div>
+    <h3>Disciplinas</h3>
+    <ul>
+        {% for disciplina in disciplinas %}
+        <li><a href="{% url 'cursos:disciplina_url' disciplina.id %}">{{ disciplina.nome }}</a></li>
+        {% endfor %}
+
+        <a href="{% url 'cursos:nova_disciplina_url' curso.id %}">
+            <button class = "add_editbutton">
+                Nova Disciplina
+            </button>
+        </a>
+    </ul>
+
+    <a href="{% url 'cursos:edita_curso_url' curso.id %}">
+        <button class = "add_editbutton">
+            Editar Curso
+        </button>
+    </a>
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Cursos{% endblock %}</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'cursos/styles.css' %}">
+
+</head>
+<body>
+    <header>
+        <h1 id="user-links"><a href="{% url 'cursos:homecursos_url' %}">Cursos</a></h1>
+
+        <div id="user-links">
+            {% if user.is_authenticated %}
+                <span>Olá, {{ user.username }}!</span>
+                <a href="{% url 'cursos:logout' %}"><button>Logout</button></a>
+            {% else %}
+                <a href="{% url 'cursos:login' %}"><button>Login</button></a>
+                <a href="{% url 'cursos:registo' %}"><button>Register</button></a>
+            {% endif %}
+        </div>
+    </header>
+
+    <main>
+        {% block content %}
+
+        {% endblock %}
+    </main>
+
+    <footer>
+            <p>© 2024 Cursos. José Vale.</p>
+    </footer>
+</body>
+</html>

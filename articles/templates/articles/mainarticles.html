@@ -1,0 +1,32 @@
+{% extends 'articles/layout.html' %}
+
+{% block content %}
+<div>
+    <h2>Lista de Artigos</h2>
+    <ul>
+        {% for article in articles %}
+        <li>
+            <h3>{{ article.title }}</h3>
+            <a href="{% url 'articles:article_url' article.id %}">Ver Detalhes</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+
+
+    <h2>Lista de Autores</h2>
+    <ul>
+        {% for author in authors %}
+        <li>
+            <h3>{{ author.name }}</h3>
+            <p>{{ article.content }}</p>
+
+            <a href="{% url 'articles:author_url' author.id %}">Ver Artigos</a>
+
+        </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'articles:novo_autor_url' %}"><button class="button-1" role="button">Adicionar Autor</button></a>
+</div>
+{% endblock %}

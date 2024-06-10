@@ -1,0 +1,40 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Artigos{% endblock %}</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'articles/styles.css' %}">
+
+
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1><a href="{% url 'articles:mainarticles_url' %}">Artigos</a></h1>
+
+            <div id="user-links">
+                {% if user.is_authenticated %}
+                    <span>Olá, {{ user.username }}!</span>
+                    <a href="{% url 'articles:logout' %}"><button>Logout</button></a>
+                {% else %}
+                    <a href="{% url 'articles:login' %}"><button>Login</button></a>
+                    <a href="{% url 'articles:registo' %}"><button>Register</button></a>
+                {% endif %}
+            </div>
+        </header>
+
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Artigos. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

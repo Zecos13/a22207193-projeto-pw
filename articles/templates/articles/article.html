@@ -1,0 +1,19 @@
+{% extends 'articles/layout.html' %}
+
+{% block content %}
+<div>
+    <h2>{{ article.title }}</h2>
+    <h3>{{ article.author.name }}</h3>
+    <div>{{ article.content }}</div>
+    <div>
+        <h3>Comentários</h3>
+        {% for comment in comments %}
+            <h4>{{ comment.author_name }}</h3>
+            <p>{{ comment.content }}</p>
+        {% endfor %}
+
+        <a href="{% url 'articles:novo_comentario_url' article.id %}"><button class="button-1" role="button">Adicionar Comentário</button></a>
+
+    </div>
+</div>
+{% endblock %}

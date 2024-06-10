@@ -1,0 +1,24 @@
+{% extends 'cursos/layout.html' %}
+
+{% block content %}
+<div class="projeto-details">
+    <h2>{{ projeto.nome }}</h2>
+
+    {% if projeto.imagem %}
+        <img src="{{ projeto.imagem.url }}" alt="{{ projeto.nome }}">
+    {% endif %}
+    <p>Descrição: {{ projeto.descricao }}</p>
+    <p>Conceitos aplicados: {{ projeto.conceitosAplicados }}</p>
+    <p>Tecnologias Usadas: {{ projeto.tecnologiasUsadas }}</p>
+
+
+
+    <a href="{% url 'cursos:edita_projeto_url' projeto.id %}">
+        <button class = "add_editbutton">
+            Editar Projeto
+        </button>
+    </a>
+
+
+</div>
+{% endblock %}

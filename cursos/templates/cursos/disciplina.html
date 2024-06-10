@@ -1,0 +1,54 @@
+{% extends 'cursos/layout.html' %}
+
+{% block content %}
+<div class="disciplina-details">
+    <h2>{{ disciplina.nome }}</h2>
+    <p>Ano: {{ disciplina.ano }}</p>
+    <p>Semestre: {{ disciplina.semestre }}</p>
+    <p>Ects: {{ disciplina.ects }}</p>
+    <h3>Projetos</h3>
+
+    {% if projeto %}
+        <ul>
+
+            <li><a href="{% url 'cursos:projeto_url' projeto.nome %}">{{ projeto.nome }}</a></li>
+
+            {% for linguagem in linguagens %}
+                <li>{{ linguagem.nome }}</a></li>
+            {% endfor %}
+
+        </ul>
+
+    {% endif %}
+
+    <a href="{% url 'cursos:novo_projeto_url' disciplina.id %}">
+        <button class = "add_editbutton">
+            Novo Projeto
+        </button>
+    </a>
+
+    <h3>Docentes</h3>
+    <ul>
+        {% for docente in docentes %}
+            <li>{{ docente.nome }}</a></li>
+            <a href="{% url 'cursos:edita_docente_url' docente.id disciplina.id %}"><button>Edita Docente</button></a>
+        {% endfor %}
+    </ul>
+
+    <div>
+        <a href="{% url 'cursos:novo_docente_url' disciplina.id %}">
+            <button class = "add_editbutton">
+                Novo Docente
+            </button>
+        </a>
+    </div>
+
+    <div>
+        <a href="{% url 'cursos:edita_disciplina_url' disciplina.id %}">
+            <button class = "add_editbutton">
+                Editar Disciplina
+            </button>
+        </a>
+    </div>
+</div>
+{% endblock %}

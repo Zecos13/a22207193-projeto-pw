@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo em {{ cidade }}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'meteo/styles.css' %}">
+</head>
+<body>
+    <header>
+
+        <a href="{% url 'meteo:cinco_dias_url' %}"><button>Previsão de cinco dias</button></a>
+
+    </header>
+
+
+
+    <div class="container">
+        <h1>Previsão do Tempo para Hoje em {{ cidade }}</h1>
+        <div class="weather-info">
+            <p>Data: <span>{{ data }}</span></p>
+            <p>Temperatura Mínima: <span>{{ temperatura_minima }}°C</span></p>
+            <p>Temperatura Máxima: <span>{{ temperatura_maxima }}°C</span></p>
+            <p>Probabilidade de Precipitação: <span>{{ precipita_prob }}%</span></p>
+            <p>Direção do Vento: <span>{{ pred_wind_dir }}</span></p>
+            <p>Velocidade do Vento: <span>{{ class_wind_speed }}</span></p>
+            <p>Coordenadas Geográficas: <span>Latitude {{ latitude }}, Longitude {{ longitude }}</span></p>
+            <img src="{{ icon_url }}" alt="Ícone do Tempo">
+        </div>
+    </div>
+    <div>
+
+        <a href="{% url 'meteo:api_meteo_url' %}"><button>Documentação API</button></a>
+
+    </div>
+</body>
+</html>

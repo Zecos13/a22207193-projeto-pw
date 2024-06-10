@@ -1,0 +1,20 @@
+{% extends 'articles/layout.html' %}
+
+{% block content %}
+<div>
+
+    <h1>{{ author.name }}</h1>
+    <h2>Lista de Artigos</h2>
+    <ul>
+        {% for article in articles %}
+        <li>
+            <h3>{{ article.title }}</h3>
+            <a href="{% url 'articles:article_url' article.id %}">Ver Detalhes</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'articles:novo_artigo_url' author.id %}"><button class="button-1" role="button">Adicionar Artigo</button></a>
+
+</div>
+{% endblock %}

@@ -1,0 +1,414 @@
+{
+  "albums": [
+    {
+      "band": "The Beatles",
+      "albums": [
+        {
+          "title": "Abbey Road",
+          "cover": "abbey_road.jpg",
+          "releaseDate": "1969-09-26",
+          "label": "Apple Records",
+          "songs": [
+            {
+              "title": "Come Together",
+              "linkSpotify": "https://open.spotify.com/track/4NzfyljL6XC1CS6U3Q4Fhf",
+              "duration": "0:04:20"
+            },
+            {
+              "title": "Here Comes the Sun",
+              "linkSpotify": "https://open.spotify.com/track/1S9yYo8eSvuJyJv3OgYcS9",
+              "duration": "0:03:06"
+            }
+          ]
+        },
+        {
+          "title": "Sgt. Pepper's Lonely Hearts Club Band",
+          "cover": "sgt_pepper.jpg",
+          "releaseDate": "1967-06-01",
+          "label": "Parlophone",
+          "songs": [
+            {
+              "title": "Lucy in the Sky with Diamonds",
+              "linkSpotify": "https://open.spotify.com/track/0Dh8ztcBYxfj8klxj8QpOL",
+              "duration": "0:03:28"
+            },
+            {
+              "title": "With a Little Help from My Friends",
+              "linkSpotify": "https://open.spotify.com/track/0QOzJt1qFZ1HMDV3eWtr20",
+              "duration": "0:02:44"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "band": "Queen",
+      "albums": [
+        {
+          "title": "A Night at the Opera",
+          "cover": "night_at_the_opera.jpg",
+          "releaseDate": "1975-11-21",
+          "label": "EMI",
+          "songs": [
+            {
+              "title": "Bohemian Rhapsody",
+              "linkSpotify": "https://open.spotify.com/track/1AhDOtG9vPSOmsWgNW0BEY",
+              "duration": "0:05:55"
+            },
+            {
+              "title": "Love of My Life",
+              "linkSpotify": "https://open.spotify.com/track/4un5FBgA7vYxKbBlV5G8Tc",
+              "duration": "0:03:39"
+            }
+          ]
+        },
+        {
+          "title": "The Game",
+          "cover": "the_game.jpg",
+          "releaseDate": "1980-06-30",
+          "label": "EMI",
+          "songs": [
+            {
+              "title": "Another One Bites the Dust",
+              "linkSpotify": "https://open.spotify.com/track/7efX5LsRAw9y5BJbDv3LBP",
+              "duration": "0:03:35"
+            },
+            {
+              "title": "Crazy Little Thing Called Love",
+              "linkSpotify": "https://open.spotify.com/track/1o7g5jIHWlbWqy3CYVp8I5",
+              "duration": "0:02:42"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "band": "Led Zeppelin",
+      "albums": [
+        {
+          "title": "Led Zeppelin IV",
+          "cover": "led_zeppelin_iv.jpg",
+          "releaseDate": "1971-11-08",
+          "label": "Atlantic Records",
+          "songs": [
+            {
+              "title": "Stairway to Heaven",
+              "linkSpotify": "https://open.spotify.com/track/1kAwwIZgWDTt8M45CT3r7Q",
+              "duration": "0:08:02"
+            },
+            {
+              "title": "Black Dog",
+              "linkSpotify": "https://open.spotify.com/track/0P6AWOA4LG1XOctzaVu5tt",
+              "duration": "0:04:55"
+            }
+          ]
+        },
+        {
+          "title": "Led Zeppelin II",
+          "cover": "led_zeppelin_ii.jpg",
+          "releaseDate": "1969-10-22",
+          "label": "Atlantic Records",
+          "songs": [
+            {
+              "title": "Whole Lotta Love",
+              "linkSpotify": "https://open.spotify.com/track/0BtX4vSNswhvCOl3xKKd7b",
+              "duration": "0:05:34"
+            },
+            {
+              "title": "Ramble On",
+              "linkSpotify": "https://open.spotify.com/track/0QBmdMCJdlGGAjAuQVTy7q",
+              "duration": "0:04:23"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "band": "Pink Floyd",
+      "albums": [
+        {
+          "title": "The Dark Side of the Moon",
+          "cover": "dark_side_of_the_moon.jpg",
+          "releaseDate": "1973-03-01",
+          "label": "Harvest Records",
+          "songs": [
+            {
+              "title": "Money",
+              "linkSpotify": "https://open.spotify.com/track/5OkrciqE9Uz8cQjwC1D5Xf",
+              "duration": "0:06:23"
+            },
+            {
+              "title": "Time",
+              "linkSpotify": "https://open.spotify.com/track/3TO7bbrUKrOSPGRTB5MeCz",
+              "duration": "0:06:53"
+            }
+          ]
+        },
+        {
+          "title": "Wish You Were Here",
+          "cover": "wish_you_were_here.jpg",
+          "releaseDate": "1975-09-12",
+          "label": "Harvest Records",
+          "songs": [
+            {
+              "title": "Wish You Were Here",
+              "linkSpotify": "https://open.spotify.com/track/6mFkJmJqdDVQ1REhVfGgd1",
+              "duration": "0:05:34"
+            },
+            {
+              "title": "Shine On You Crazy Diamond (Parts I–V)",
+              "linkSpotify": "https://open.spotify.com/track/5UvP6XrqhS3UhGqcHjgqOJ",
+              "duration": "0:13:32"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "band": "The Rolling Stones",
+      "albums": [
+        {
+          "title": "Sticky Fingers",
+          "cover": "sticky_fingers.jpg",
+          "releaseDate": "1971-04-23",
+          "label": "Rolling Stones Records",
+          "songs": [
+            {
+              "title": "Brown Sugar",
+              "linkSpotify": "https://open.spotify.com/track/5IFC3CB9zJ2vMH0Z929G2G",
+              "duration": "0:03:49"
+            },
+            {
+              "title": "Wild Horses",
+              "linkSpotify": "https://open.spotify.com/track/6txWwLp3Lxsj4W8fzRrCs0",
+              "duration": "0:05:42"
+            }
+          ]
+        },
+        {
+          "title": "Let It Bleed",
+          "cover": "let_it_bleed.jpg",
+          "releaseDate": "1969-12-05",
+          "label": "Decca",
+          "songs": [
+            {
+              "title": "Gimme Shelter",
+              "linkSpotify": "https://open.spotify.com/track/1hh0zDQkD6LKyWjT7kcJKt",
+              "duration": "0:04:31"
+            },
+            {
+              "title": "You Can't Always Get What You Want",
+              "linkSpotify": "https://open.spotify.com/track/0Uc3wjbX2xv9O0wQQqj5SF",
+              "duration": "0:07:28"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "band": "AC/DC",
+      "albums": [
+        {
+          "title": "Back in Black",
+          "cover": "back_in_black.jpg",
+          "releaseDate": "1980-07-25",
+          "label": "Atlantic Records",
+          "songs": [
+            {
+              "title": "Back in Black",
+              "linkSpotify": "https://open.spotify.com/track/08mG3Y1vljYA6bvDt4Wqkj",
+              "duration": "0:04:15"
+            },
+            {
+              "title": "You Shook Me All Night Long",
+              "linkSpotify": "https://open.spotify.com/track/6H3kDeFHP0h3C2R5vx6h4D",
+              "duration": "0:03:30"
+            }
+          ]
+        },
+        {
+          "title": "Highway to Hell",
+          "cover": "highway_to_hell.jpg",
+          "releaseDate": "1979-07-27",
+          "label": "Atlantic Records",
+          "songs": [
+            {
+              "title": "Highway to Hell",
+              "linkSpotify": "https://open.spotify.com/track/2nhBwF4Qp9VdS2r6Ur8Jr3",
+              "duration": "0:03:28"
+            },
+            {
+              "title": "Shot Down in Flames",
+              "linkSpotify": "https://open.spotify.com/track/1vNR4wrS3CO3BNuTaKhI1c",
+              "duration": "0:03:22"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "band": "Metallica",
+      "albums": [
+        {
+          "title": "Metallica (The Black Album)",
+          "cover": "metallica_black_album.jpg",
+          "releaseDate": "1991-08-12",
+          "label": "Elektra",
+          "songs": [
+            {
+              "title": "Enter Sandman",
+              "linkSpotify": "https://open.spotify.com/track/5JNPAlLG0v7b6L4cGjVZRg",
+              "duration": "0:05:32"
+            },
+            {
+              "title": "The Unforgiven",
+              "linkSpotify": "https://open.spotify.com/track/0fFYJ7KGHub7u5m2yL0x2F",
+              "duration": "0:06:27"
+            }
+          ]
+        },
+        {
+          "title": "...And Justice for All",
+          "cover": "justice_for_all.jpg",
+          "releaseDate": "1988-08-25",
+          "label": "Elektra",
+          "songs": [
+            {
+              "title": "One",
+              "linkSpotify": "https://open.spotify.com/track/0hGZFasbHsZP8vIXk1KoyP",
+              "duration": "0:07:24"
+            },
+            {
+              "title": "Blackened",
+              "linkSpotify": "https://open.spotify.com/track/7L93lVrvI4NPu7eVNUFgXE",
+              "duration": "0:06:41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "band": "Nirvana",
+      "albums": [
+        {
+          "title": "Nevermind",
+          "cover": "nevermind.jpg",
+          "releaseDate": "1991-09-24",
+          "label": "DGC Records",
+          "songs": [
+            {
+              "title": "Smells Like Teen Spirit",
+              "linkSpotify": "https://open.spotify.com/track/3jkdQN2X0ZFg5V5n0h9SvM",
+              "duration": "0:05:01"
+            },
+            {
+              "title": "Come as You Are",
+              "linkSpotify": "https://open.spotify.com/track/6VU8JGVREVYRvVSYIEmz5Y",
+              "duration": "0:03:38"
+            }
+          ]
+        },
+        {
+          "title": "In Utero",
+          "cover": "in_utero.jpg",
+          "releaseDate": "1993-09-13",
+          "label": "DGC Records",
+          "songs": [
+            {
+              "title": "Heart-Shaped Box",
+              "linkSpotify": "https://open.spotify.com/track/0Bxv97UkGpPBlNznF7wHpx",
+              "duration": "0:04:41"
+            },
+            {
+              "title": "All Apologies",
+              "linkSpotify": "https://open.spotify.com/track/3WJ0N8nx6GMNMOglLDqnn6",
+              "duration": "0:03:51"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "band": "The Doors",
+      "albums": [
+        {
+          "title": "The Doors",
+          "cover": "the_doors.jpg",
+          "releaseDate": "1967-01-04",
+          "label": "Elektra",
+          "songs": [
+            {
+              "title": "Break On Through (To the Other Side)",
+              "linkSpotify": "https://open.spotify.com/track/2WfaOiMkCvy7F5fcp2zZ8L",
+              "duration": "0:02:29"
+            },
+            {
+              "title": "Light My Fire",
+              "linkSpotify": "https://open.spotify.com/track/0yFvBIRZf6jGft5exzF6U4",
+              "duration": "0:07:06"
+            }
+          ]
+        },
+        {
+          "title": "L.A. Woman",
+          "cover": "la_woman.jpg",
+          "releaseDate": "1971-04-19",
+          "label": "Elektra",
+          "songs": [
+            {
+              "title": "Riders on the Storm",
+              "linkSpotify": "https://open.spotify.com/track/1vIEXdpwMM1FzBQKoU8vmT",
+              "duration": "0:07:09"
+            },
+            {
+              "title": "Love Her Madly",
+              "linkSpotify": "https://open.spotify.com/track/6MJD7k5LPqLhPfMrntq8b3",
+              "duration": "0:03:18"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "band": "Guns N' Roses",
+      "albums": [
+        {
+          "title": "Appetite for Destruction",
+          "cover": "appetite_for_destruction.jpg",
+          "releaseDate": "1987-07-21",
+          "label": "Geffen",
+          "songs": [
+            {
+              "title": "Sweet Child o' Mine",
+              "linkSpotify": "https://open.spotify.com/track/7o2CTH4ctstm8TNelqjb51",
+              "duration": "0:05:55"
+            },
+            {
+              "title": "Welcome to the Jungle",
+              "linkSpotify": "https://open.spotify.com/track/09CtPGIpYB4BrO8qb1RGsF",
+              "duration": "0:04:34"
+            }
+          ]
+        },
+        {
+          "title": "Use Your Illusion I",
+          "cover": "use_your_illusion_i.jpg",
+          "releaseDate": "1991-09-17",
+          "label": "Geffen",
+          "songs": [
+            {
+              "title": "November Rain",
+              "linkSpotify": "https://open.spotify.com/track/5tth2a3v0h6zwEI3xhJTSE",
+              "duration": "0:08:57"
+            },
+            {
+              "title": "Don't Cry",
+              "linkSpotify": "https://open.spotify.com/track/3s8QOeZq75rA5gFmPDSYOh",
+              "duration": "0:04:44"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

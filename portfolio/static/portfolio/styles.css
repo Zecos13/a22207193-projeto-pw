@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Modo Escuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Modo Claro (Padrão) */
+body.light-mode {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.container-header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode .container-header {
+    background: #1e2326;
+}
+
+body.light-mode .container-header {
+    background: #fff;
+}
+
+.container-header header {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.container-header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.container-header header nav ul li a {
+    text-align: none;
+    margin: 0 15px;
+    padding: 3px;
+    transition: color 0.5s;
+}
+
+body.dark-mode .container-header header nav ul li a {
+    color: #fff;
+}
+
+body.light-mode .container-header header nav ul li a {
+    color: #000;
+}
+
+div#data,
+div#tempo {
+    text-align: none;
+    margin: 0 15px;
+    padding: 3px;
+    transition: color 0.5s;
+}
+
+body.dark-mode div#data,
+body.dark-mode div#tempo {
+    color: #fff;
+}
+
+body.light-mode div#data,
+body.light-mode div#tempo {
+    color: #000;
+}
+
+body.light-mode .container-header header nav ul li a:hover {
+    color: #1cb698;
+}
+
+body.dark-mode .container-header header nav ul li a:hover {
+    color: #1cb698;
+}
+
+.nav_responsive {
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    transition: color 0.3s;
+}
+
+body.dark-mode .dropdown .dropbtn {
+    color: white;
+}
+
+body.light-mode .dropdown .dropbtn {
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode .dropdown-content {
+    background-color: #1e2326;
+}
+
+body.light-mode .dropdown-content {
+    background-color: #fff;
+}
+
+.dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: color 0.3s;
+}
+
+body.dark-mode .dropdown-content a {
+    color: #1cb698;
+}
+
+body.light-mode .dropdown-content a {
+    color: #007bff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: color 0.3s;
+}
+
+body.dark-mode .hero {
+    color: #fff;
+}
+
+body.light-mode .hero {
+    color: #000;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100vh; /* Ensures the image height doesn't exceed the viewport height */
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 0; /* Position the image at the top */
+    left: 0; /* Position the image at the left */
+    transform: translate(0%, 0%);
+}
+
+.hero-contents {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilo para os links */
+a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+body.dark-mode a {
+    color: #007bff;
+}
+
+body.light-mode a {
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+  height: 30px;
+  margin: 5px;
+  width: 120px;
+  background: #333;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Consolas, Courier New, monospace;
+  border: solid #404c5d 1px;
+  font-size: 16px;
+  color: rgb(161, 161, 161);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #2e2d2d, #212121);
+  -webkit-box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+    inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+  box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+    inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+}
+
+button:hover {
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+button:active {
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}

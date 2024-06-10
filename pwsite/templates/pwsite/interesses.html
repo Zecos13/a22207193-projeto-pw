@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Programação Web</title>
+        <style>
+            body {
+                background: pink;
+                color: black;
+            }
+        </style>
+    </head>
+
+    <header>
+
+        <h1>OLÁ MUNDO</h1>
+
+        <nav>
+            <a href="{% url 'pwsite:index' %}">Introdução</a>
+        </nav>
+
+    </header>
+
+
+
+    <body>
+        Olá, eu sou o José.
+
+        O que tenho gostado mais em PW é de ser a única cadeira este semestre em que escrevemos código.
+
+
+    </body>
+
+    <footer>
+        <p>&copy; {{ ano }} Programação Web, Universidade Lusófona - Todos os direitos reservados.</p>
+    </footer>
+
+
+</html>

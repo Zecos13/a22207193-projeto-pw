@@ -1,0 +1,76 @@
+{
+  "bands": [
+    {
+      "name": "The Beatles",
+      "photo": "the_beatles.jpg",
+      "info": "The Beatles were an English rock band formed in Liverpool in 1960.",
+      "yearFormation": 1960,
+      "genre": "Rock"
+    },
+    {
+      "name": "Queen",
+      "photo": "queen.jpg",
+      "info": "Queen are a British rock band formed in London in 1970.",
+      "yearFormation": 1970,
+      "genre": "Rock"
+    },
+    {
+      "name": "Led Zeppelin",
+      "photo": "led_zeppelin.jpg",
+      "info": "Led Zeppelin were an English rock band formed in London in 1968.",
+      "yearFormation": 1968,
+      "genre": "Rock"
+    },
+    {
+      "name": "Pink Floyd",
+      "photo": "pink_floyd.jpg",
+      "info": "Pink Floyd were an English rock band formed in London in 1965.",
+      "yearFormation": 1965,
+      "genre": "Rock"
+    },
+    {
+      "name": "The Rolling Stones",
+      "photo": "the_rolling_stones.jpg",
+      "info": "The Rolling Stones are an English rock band formed in London in 1962.",
+      "yearFormation": 1962,
+      "genre": "Rock"
+    },
+    {
+      "name": "AC/DC",
+      "photo": "ac_dc.jpg",
+      "info": "AC/DC are an Australian rock band formed in Sydney in 1973.",
+      "yearFormation": 1973,
+      "genre": "Rock"
+    },
+    {
+      "name": "Metallica",
+      "photo": "metallica.jpg",
+      "info": "Metallica are an American heavy metal band formed in Los Angeles in 1981.",
+      "yearFormation": 1981,
+      "genre": "Heavy Metal"
+    },
+    {
+      "name": "Nirvana",
+      "photo": "nirvana.jpg",
+      "info": "Nirvana were an American rock band formed in Aberdeen, Washington in 1987.",
+      "yearFormation": 1987,
+      "genre": "Grunge"
+    },
+    {
+      "name": "The Doors",
+      "photo": "the_doors.jpg",
+      "info": "The Doors were an American rock band formed in Los Angeles in 1965.",
+      "yearFormation": 1965,
+      "genre": "Rock"
+    },
+    {
+      "name": "Guns N' Roses",
+      "photo": "guns_n_roses.jpg",
+      "info": "Guns N' Roses are an American hard rock band formed in Los Angeles in 1985.",
+      "yearFormation": 1985,
+      "genre": "Hard Rock"
+    }
+  ]
+
+}
+

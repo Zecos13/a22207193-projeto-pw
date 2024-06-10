@@ -1,0 +1,24 @@
+{% extends 'festivais/layout.html' %}
+
+{% block content %}
+    <h2>{{ festival.nome }}</h2>
+    <p><strong>Localização:</strong> {{ festival.localizacao }}</p>
+    <p><strong>Data de Início:</strong> {{ festival.data_inicio }}</p>
+    <p><strong>Data de Fim:</strong> {{ festival.data_fim }}</p>
+
+    <h3>Bandas:</h3>
+    <ul>
+        {% for banda in festival.bandas.all %}
+            <li>{{ banda.nome }} - Gênero: {{ banda.genero }}</li>
+        {% endfor %}
+    </ul>
+
+    {% if festival.imagem %}
+    <img src="{{ festival.imagem.url }}" alt="{{ festival.nome }}" style="max-width: 300px;">
+    {% else %}
+    <p>Imagem indisponível para este festival.</p>
+    {% endif %}
+    <br></br>
+
+    <a href="{% url 'festivais:festivais' %}">Voltar para a lista de festivais</a>
+{% endblock %}

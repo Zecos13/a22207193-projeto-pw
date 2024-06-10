@@ -1,0 +1,19 @@
+{% extends 'bandas/layout.html' %}
+
+{% block content %}
+
+
+<div>
+    <h2>{{ song.title }}</h2>
+    <p>Duração: {{ song.duration }}</p>
+    <p>Link Spotify: <a href="{{ song.linkSpotify }}">{{ song.linkSpotify }}</a></p>
+
+    {% if song.lyrics %}
+        <p>{{ song.lyrics }}</p>
+    {% endif %}
+
+    <a href="{% url 'bandas:edita_musica_url' song.id %}"><button>Editar Música</button></a>
+
+
+</div>
+{% endblock %}

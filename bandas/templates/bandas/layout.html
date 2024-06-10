@@ -1,0 +1,47 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bandas/styles.css' %}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/73896b70fb.js" crossorigin="anonymous"></script>
+
+    <title>{% block title %}Bandas{% endblock %}</title>
+
+
+</head>
+<body>
+    <header>
+        <h1 id="link"><a href="{% url 'bandas:bandas_url' %}"><i class="fa-solid fa-drum"></i> Bandas</a></h1>
+
+        <div id="user-links">
+            {% if user.is_authenticated %}
+                <span>Olá, {{ user.username }}!</span>
+                <a href="{% url 'bandas:logout' %}"><button>Logout</button></a>
+            {% else %}
+                <a href="{% url 'bandas:login' %}"><button>Login</button></a>
+                <a href="{% url 'bandas:registo' %}"><button>Register</button></a>
+            {% endif %}
+
+
+
+        </div>
+
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
